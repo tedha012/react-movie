@@ -5,8 +5,8 @@ import Home from "./routes/Home";
 function App() {
   return (
     <Routes>
+      <Route path="/movie/:id" element={<Detail />} />
       <Route path="/" element={<Home />} />
-      <Route path="/movie" element={<Detail />} />
     </Routes>
   );
 }
